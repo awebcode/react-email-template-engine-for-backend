@@ -4,8 +4,10 @@
   "description": "Express.js email template renderer",
   "main": "dist/server.js",
   "scripts": {
-    "dev": "nodemon --exec ts-node server.ts",
-    "build": "swc . -d dist --strip-leading-paths",
+    "dev": "concurrently \"npm:watch\" \"npm:serve\"",
+    "watch": "swc src -d dist --strip-leading-paths -w",
+    "serve": "nodemon dist/server.js",
+    "build": "swc src -d dist --strip-leading-paths",
     "start": "node dist/server.js"
   },
   "dependencies": {
@@ -28,6 +30,7 @@
     "@types/sanitize-html": "latest",
     "nodemon": "latest",
     "ts-node": "latest",
-    "typescript": "latest"
+    "typescript": "latest",
+    "concurrently": "latest"
   }
 }

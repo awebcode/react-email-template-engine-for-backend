@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json.schemastore.org/swcrc",
+  "$schema": "https://swc.rs/schema.json",
   "jsc": {
     "parser": {
       "syntax": "typescript",
@@ -13,11 +13,14 @@
         "refresh": false
       }
     },
-    "target": "esnext",
+    "target": "es2022",
     "externalHelpers": true,
-    "keepClassNames": true
+    "keepClassNames": true,
+    "loose": false
   },
   "module": {
-    "type": "commonjs"
-  }
+    "type": "commonjs",
+    "noInterop": false
+  },
+  "sourceMaps": true
 }

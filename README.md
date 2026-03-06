@@ -1,4 +1,4 @@
-# Principal Architecture: React Email & Dynamic PDF System
+# Principal Architecture: React Email & Dynamic PDF System (Can be used as a standalone service in any JS/TS environment)
 
 A high-performance, type-safe orchestration layer for rendering mission-critical HTML emails and pixel-perfect PDF reports using React (TSX) on the backend.
 
