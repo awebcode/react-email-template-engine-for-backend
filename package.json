@@ -1,0 +1,33 @@
+{
+  "name": "email-templates",
+  "version": "1.0.0",
+  "description": "Express.js email template renderer",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node server.ts",
+    "build": "swc . -d dist --strip-leading-paths",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "@react-email/components": "latest",
+    "@react-email/render": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "sanitize-html": "latest"
+  },
+  "devDependencies": {
+    "@swc/cli": "latest",
+    "@swc/core": "latest",
+    "@swc/helpers": "latest",
+    "@types/express": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/sanitize-html": "latest",
+    "nodemon": "latest",
+    "ts-node": "latest",
+    "typescript": "latest"
+  }
+}
